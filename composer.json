@@ -1,5 +1,5 @@
 {
-    "name": "phpunit/dbunit",
+    "name": "gfg/dbunit",
     "description": "PHPUnit extension for database interaction testing",
     "type": "library",
     "keywords": [
