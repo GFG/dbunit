@@ -72,10 +72,8 @@ class TableIterator implements ITableIterator
 
     /**
      * Returns the current table.
-     *
-     * @return ITable
      */
-    public function current()
+    public function current(): ITable
     {
         $tableName = \current($this->tableNames);
 

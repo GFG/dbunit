@@ -66,10 +66,8 @@ class DefaultTableIterator implements ITableIterator
 
     /**
      * Returns the current table.
-     *
-     * @return ITable
      */
-    public function current()
+    public function current(): ITable
     {
         return \current($this->tables);
     }
