@@ -10,6 +10,8 @@
 
 namespace PHPUnit\DbUnit\DataSet;
 
+use Iterator;
+
 /**
  * Implements the basic functionality of data sets.
  */
@@ -79,7 +81,7 @@ abstract class AbstractDataSet implements IDataSet
      *
      * @return ITableIterator
      */
-    public function getIterator()
+    public function getIterator(): Iterator
     {
         return $this->createIterator();
     }
@@ -130,5 +132,5 @@ abstract class AbstractDataSet implements IDataSet
      *
      * @return ITableIterator
      */
-    abstract protected function createIterator($reverse = false);
+    abstract protected function createIterator($reverse = false): Iterator;
 }
