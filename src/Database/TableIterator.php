@@ -84,10 +84,8 @@ class TableIterator implements ITableIterator
 
     /**
      * Returns the name of the current table.
-     *
-     * @return string
      */
-    public function key()
+    public function key(): string
     {
         return $this->current()->getTableMetaData()->getTableName();
     }
