@@ -94,10 +94,8 @@ class ReplacementTableIterator implements OuterIterator, ITableIterator
 
     /**
      * Returns the current table.
-     *
-     * @return ITable
      */
-    public function current()
+    public function current(): ITable
     {
         return new ReplacementTable($this->innerIterator->current(), $this->fullReplacements, $this->subStrReplacements);
     }
