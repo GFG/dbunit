@@ -129,12 +129,12 @@ class ReplacementTableIterator implements OuterIterator, ITableIterator
      *
      * @return bool
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->innerIterator->valid();
     }
 
-    public function getInnerIterator()
+    public function getInnerIterator(): ?\Iterator
     {
         return $this->innerIterator;
     }

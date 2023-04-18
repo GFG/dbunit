@@ -82,7 +82,7 @@ class ReplacementDataSet extends AbstractDataSet
      *
      * @return ITableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): ReplacementTableIterator
     {
         $innerIterator = $reverse ? $this->dataSet->getReverseIterator() : $this->dataSet->getIterator();
 

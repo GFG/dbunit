@@ -66,7 +66,7 @@ class ArrayDataSet extends AbstractDataSet
         return $this->tables[$tableName];
     }
 
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): DefaultTableIterator
     {
         return new DefaultTableIterator($this->tables, $reverse);
     }

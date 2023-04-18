@@ -72,7 +72,7 @@ class CompositeDataSet extends AbstractDataSet
      *
      * @return ITableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): \Iterator
     {
         if ($reverse) {
             return $this->motherDataSet->getReverseIterator();
