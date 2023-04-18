@@ -67,7 +67,7 @@ class DefaultTableIterator implements ITableIterator
     /**
      * Returns the current table.
      */
-    public function current(): ITable
+    public function current(): mixed
     {
         return \current($this->tables);
     }
