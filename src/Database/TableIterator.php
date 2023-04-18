@@ -117,7 +117,7 @@ class TableIterator implements ITableIterator
      *
      * @return bool
      */
-    public function valid()
+    public function valid(): bool
     {
         return \current($this->tableNames) !== false;
     }

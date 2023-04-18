@@ -87,7 +87,7 @@ class QueryDataSet extends AbstractDataSet
      *
      * @return TableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): DefaultTableIterator
     {
         return new DefaultTableIterator($this->tables, $reverse);
     }

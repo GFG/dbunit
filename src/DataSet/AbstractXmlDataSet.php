@@ -116,7 +116,7 @@ abstract class AbstractXmlDataSet extends AbstractDataSet
      *
      * @return ITableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): DefaultTableIterator
     {
         return new DefaultTableIterator($this->tables, $reverse);
     }

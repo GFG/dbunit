@@ -139,7 +139,7 @@ class DataSet extends AbstractDataSet
      *
      * @return TableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): TableIterator
     {
         return new TableIterator($this->getTableNames(), $this, $reverse);
     }

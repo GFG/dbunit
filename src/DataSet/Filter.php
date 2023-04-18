@@ -131,7 +131,7 @@ class Filter extends AbstractDataSet
      *
      * @return ITableIterator
      */
-    protected function createIterator($reverse = false)
+    protected function createIterator($reverse = false): DefaultTableIterator
     {
         $original_tables = $this->originalDataSet->getIterator($reverse);
         $new_tables      = [];
