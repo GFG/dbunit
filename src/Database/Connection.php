@@ -34,7 +34,7 @@ interface Connection
      *
      * @return IDataSet
      */
-    public function createDataSet(array $tableNames = null);
+    public function createDataSet(?array $tableNames = null);
 
     /**
      * Creates a table with the result of the specified SQL statement.
