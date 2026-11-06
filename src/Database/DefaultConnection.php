@@ -86,7 +86,7 @@ class DefaultConnection implements Connection
      *
      * @todo Implement the filtered data set.
      */
-    public function createDataSet(array $tableNames = null)
+    public function createDataSet(?array $tableNames = null)
     {
         if (empty($tableNames)) {
             return new DataSet($this);
